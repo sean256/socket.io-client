@@ -10,9 +10,7 @@ module.exports = {
   externals: {
     global: glob()
   },
-  node: {
-    Buffer: false
-  },
+  node: false,
   devtool: 'source-map',
   module: {
     loaders: [{

@@ -12,9 +12,7 @@ module.exports = {
   externals: {
     global: glob()
   },
-  node: {
-    Buffer: false
-  },
+  node: false,
   devtool: 'source-map',
   plugins: [
     new webpack.NormalModuleReplacementPlugin(/debug/, process.cwd() + '/support/noop.js')
