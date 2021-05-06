@@ -40,6 +40,10 @@ server.on('connection', function (socket) {
     socket.emit('hi');
   });
 
+  socket.on('echo', (arg, cb) => {
+    cb(arg);
+  });
+
   // ack tests
   socket.on('ack', function () {
     socket.emit('ack', function (a, b) {
